@@ -1,0 +1,25 @@
+@import '../../../../../../assets/styles/base.scss';
+
+button {
+  background-color: $lightBrown;
+  color: $darkBrown;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #d8cece;
+  font-size: 13px;
+  margin-top: 17px;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-family: 'Roboto';
+  border-radius: 3px;
+  font-weight: 700;
+  width: 193px;
+  &:hover,
+  &:focus{
+    outline: none;
+    box-shadow: inset 0 0 1px black;
+    background-color: $blue;
+  }
+}

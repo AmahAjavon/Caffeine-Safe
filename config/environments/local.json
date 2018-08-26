@@ -1,0 +1,9 @@
+{
+    "db_hostname": "localhost",
+    "db_username": "root",
+    "db_pass": "root",
+    "db_database": "Caffeine",
+    "app_url": "localhost:8082",
+    "port": 8080,
+    "secret": "secret"
+}

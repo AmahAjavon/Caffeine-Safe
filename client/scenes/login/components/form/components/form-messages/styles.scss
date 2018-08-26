@@ -1,0 +1,26 @@
+.success-message,
+.error-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -58px;
+    padding: 0;
+    margin: 10px -16px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 2px solid #fcfcfc;
+    border-top: none;
+    font-size: 13px;
+    line-height: 0px;
+    p {
+      line-height: 3px;
+    }
+}
+
+.success-message {
+  background-color: #c5fdc2;
+}
+
+.error-message {
+  background-color: #ff9d9d;
+}
