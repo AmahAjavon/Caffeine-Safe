@@ -1,6 +1,7 @@
 
 /**
- * checkLevel, login middleware function for users.
+ * checkLevel, checking, comparing and calculation
+ * of caffeine levels.
  *
  * @param {String} amount
  * @param {String} frequency

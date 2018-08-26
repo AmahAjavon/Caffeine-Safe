@@ -38,7 +38,7 @@ const styles = theme => ({
         borderBottom: '1px solid #e8e8e8',
     },
     tabsIndicator: {
-        backgroundColor: '#1890ff',
+        backgroundColor: '#3F250B',
     },
     tabRoot: {
         textTransform: 'initial',
@@ -58,11 +58,11 @@ const styles = theme => ({
             '"Segoe UI Symbol"',
         ].join(','),
         '&:hover': {
-            color: '#f5dbaa',
+            color: '#ffffff',
             opacity: 1,
         },
         '&$tabSelected': {
-            color: '#1890ff',
+            color: '#3F250B',
             fontWeight: theme.typography.fontWeightMedium,
         },
         '&:focus': {

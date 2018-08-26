@@ -77,6 +77,41 @@ const styles = theme => ({
             boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
         },
     },
+    resetButton: {
+        boxShadow: 'none',
+        textTransform: 'none',
+        fontSize: 16,
+        marginLeft:5,
+        padding: '6px 12px',
+        border: '1px solid',
+        backgroundColor: '#8B4513',
+        borderColor: '#3F250B',
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+        '&:hover': {
+            backgroundColor: '#3F250B',
+            borderColor: '#3F250B',
+        },
+        '&:active': {
+            boxShadow: 'none',
+            backgroundColor: '#3F250B',
+            borderColor: '#3F250B',
+        },
+        '&:focus': {
+            backgroundColor: '#3F250B',
+            boxShadow: '0 0 0 0.2rem rgba(139,69,19)',
+        },
+    },
 });
 
 class Item extends React.Component {
@@ -142,7 +177,7 @@ class Item extends React.Component {
                             onChange={this.handleFieldChange}
                             endAdornment={<InputAdornment position="end">Times</InputAdornment>}
                             inputProps={{
-                                'aria-label': 'Weight',
+                                'aria-label': 'Amount',
                             }}
                         />
                         <FormHelperText id="weight-helper-text">Amount Of Times Consumed</FormHelperText>
@@ -158,9 +193,9 @@ class Item extends React.Component {
                     </Button>
                     <Button
                         variant="contained"
-                        color="secondary"
+                        color="primary"
                         disableRipple
-                        className={classNames(classes.margin, classes.bootstrapRoot)}
+                        className={classNames(classes.margin, classes.resetButton)}
                         onClick={this.resetFrequency}
                     >
                         Reset
