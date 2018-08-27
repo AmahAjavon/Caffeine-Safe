@@ -5,12 +5,13 @@ Web app built with `React`, `Redux` on the client side, and  `Node` on the serve
 
 ### Set up on your computer
 
-##### - Clone this repository `git clone https://github.com/AmahAjavon/Caffeine-Safe.git`
-##### - `cd Caffeine-Safe/`
+##### - Clone this repository `git clone https://github.com/AmahAjavon/Caffeine-Safe.git` in your terminal (bash or iterm works)
+##### - Move to the main directory `cd Caffeine-Safe/`
 ##### - Make sure you have `NPM` and `Node` installed (you can use `homebrew`)
 ##### - Download mysql from `https://www.sequelpro.com` if you do not already have it, and add new database named `Caffeine` 
 ##### - The current user is `root` and password `root` but you can edit `/config/environment/local.json` to your liking.
-##### - run `npm install`
-##### - run `npm start`
+##### - Run `npm install`
+##### - Run `npm start`
+##### - Check `http://localhost:8082`
 
 
