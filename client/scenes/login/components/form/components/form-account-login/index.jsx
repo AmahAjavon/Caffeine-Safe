@@ -1,5 +1,5 @@
 // Import dependencies.
-import React, { Component } from 'react';
+import React  from 'react';
 
 // Import scene styles.
 import FormAccountLoginStyles from './styles.scss';

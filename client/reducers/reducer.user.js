@@ -16,6 +16,11 @@
          user: action.user
        });
      }
+     case 'CLEAR_USER' : {
+       return Object.assign({}, state, {
+           user: {}
+       });
+     }
      default:
        return state
    }

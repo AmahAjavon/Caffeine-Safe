@@ -37,14 +37,17 @@ export function login(credentials) {
 
 /**
  * function logout, deletes users token from
- * localStorage. Also sets uers authorization to false.
+ * localStorage. Also sets users authorization to false.
  */
 export function logout() {
   // Remove user JWT.
   localStorage.removeItem('token');
   return (dispatch) => {
-    // Set user authorization to false.
+    // Set user authorization to false and reset axios.
     dispatch(isAuthorized(false));
+    dispatch(setAxiosRequestPending(false));
+    dispatch(setAxiosRequestSuccess(false));
+    dispatch(setAxiosRequestError(false));
   }
 }
 
@@ -67,7 +70,7 @@ export function setUser(user) {
  *
  * @param  {Function} dispatch
  * @param  {Object} credentials
- * @param  {String} postAPI
+ * @param  {String} endpoint
  */
 function postUserCredentials(dispatch, credentials, endpoint) {
   // Reset global state. These are used to show ajax loaders

@@ -30,9 +30,12 @@ ReactDOM.render(
   document.getElementById('application')
 );
 
-// Accept hot reload for development.
 if (module.hot) {
-  module.hot.accept();
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept('./reducers', () => {
+        const nextRootReducer = require('./reducers/index');
+        store.replaceReducer(nextRootReducer);
+    });
 }
 
 // Exporting history for redirects.
